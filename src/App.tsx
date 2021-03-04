@@ -9,6 +9,7 @@ import { Logo } from "./components/Logo";
 import { Home } from "./pages/home";
 import { routes } from "./routes";
 import { FormPage } from "./pages/formPage";
+import { CreateForm } from "./pages/createForm";
 
 const ApplicationWrapper = styled.div`
   width: 768px;
@@ -52,30 +53,9 @@ export const App = () => {
                   />
                 </Route>
               ))}
-              {/* <Route path="/emsculpt">
-                <Emsculpt />
+              <Route path="/create-form">
+                <CreateForm />
               </Route>
-              <Route path="/laser">
-                <Laser />
-              </Route>
-              <Route path="/consultation">
-                <Consultation />
-              </Route>
-              <Route path="/injectables">
-                <Injectables />
-              </Route>
-              <Route path="/post-laser">
-                <PostLaser />
-              </Route>
-              <Route path="/post-platelet-rich-plasma">
-                <PostPlateletRichPlasma />
-              </Route>
-              <Route path="/post-dermal-fillers">
-                <PostDermalFillers />
-              </Route>
-              <Route path="/post-botulinum-toxin-type-a">
-                <PostBotulinumToxinTypeA />
-              </Route> */}
               <Route path="/login">
                 <Login />
               </Route>

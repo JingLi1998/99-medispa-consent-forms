@@ -54,13 +54,14 @@ const StyledLink = styled(Link)`
 type Props = {
   to: string;
   children: ReactNode;
+  exact?: boolean;
 };
 
-export const NavLink = ({ children, to }: Props) => (
+export const NavLink = ({ children, exact = true, to }: Props) => (
   <StyledLink
     as={NavigationLink}
     color="brand"
-    exact
+    exact={exact}
     h="full"
     to={to}
     my="auto"
