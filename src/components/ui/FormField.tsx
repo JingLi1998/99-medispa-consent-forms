@@ -42,7 +42,6 @@ export const FormField = forwardRef<any, Props>(
           />
         );
       case "checkbox":
-        console.log(value);
         return (
           <div>
             <Checkbox
