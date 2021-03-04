@@ -29,6 +29,9 @@ export const Navbar = ({ isLoggedIn, onLogout }: Props) => {
       {isLoggedIn ? (
         <>
           <NavLink to="/">Home</NavLink>
+          <NavLink exact={false} to="/create-form">
+            Create Form
+          </NavLink>
           <Link color="brand" onClick={logout} mx={3}>
             Logout
           </Link>
