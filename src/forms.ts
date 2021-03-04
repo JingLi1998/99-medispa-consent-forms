@@ -76,7 +76,7 @@ export const consultationFields = [
       { type: "checkbox", label: "Vascular", name: "vascular" },
       { type: "checkbox", label: "Skin Tightening", name: "skinTightening" },
       { type: "checkbox", label: "Body Contouring", name: "bodyContouring" },
-      { type: "checkbox", label: "Tatoo Removal", name: "tatooRemoval" },
+      { type: "checkbox", label: "Tattoo Removal", name: "tattooRemoval" },
       {
         type: "textarea",
         label: "Please list which areas are to be Treated",
@@ -326,7 +326,7 @@ export const postPlateletRichPlasmaFields = [
         listItems: [
           "There are minimal restrictions after your PRP injections allowing you to return to your daily activities almost immediately",
           "Do NOT touch, press, rub, or manipulate the treated area (s) for at least 8 hours after your treatment",
-          "AVOID Aspirin, Motrin, Ibuprofen, Alev e (all non-steroidal a n d st er oi dal a n t i -inflammatory agents), Gingko Biloba, Garlic, Flax Oil, Cod liver Oil, Vitamin A, Vitamin E, or any other essential fatty acids at least 3 days - 1week prior to and after your treatment",
+          "AVOID Aspirin, Motrin, Ibuprofen, Aleve (all non-steroidal a n d st er oi dal a n t i -inflammatory agents), Gingko Biloba, Garlic, Flax Oil, Cod liver Oil, Vitamin A, Vitamin E, or any other essential fatty acids at least 3 days - 1week prior to and after your treatment",
           "Remember, we are creating inflammation. If you experience discomfort or pain you may take Tylenol or other Acetaminophen products",
           "You may apply Ice if you wish to the injected area for 20-30 minutes after the procedure but we would prefer if you can refrain from this",
           "You may apply Ice if you wish to the injected area for 20-30 minutes after the procedure but we would prefer if you can refrain from this",

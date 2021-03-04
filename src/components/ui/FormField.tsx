@@ -1,24 +1,9 @@
 import { forwardRef } from "react";
 import { Checkbox } from "./Checkbox";
+import { FormField as FormFieldType } from "../../types";
 import { List } from "./List";
 import { TextArea } from "./TextArea";
 import { TextField } from "./TextField";
-
-type FormFieldShared = {
-  label: string;
-};
-
-type FormFieldInput = FormFieldShared & {
-  name: string;
-  type: "text" | "email" | "textarea" | "checkbox";
-};
-
-type FormFieldList = FormFieldShared & {
-  listItems: string[];
-  type: "list";
-};
-
-type FormFieldType = FormFieldInput | FormFieldList;
 
 type Props = {
   formField: FormFieldType;
@@ -42,7 +27,6 @@ export const FormField = forwardRef<any, Props>(
           />
         );
       case "checkbox":
-        console.log(value);
         return (
           <div>
             <Checkbox

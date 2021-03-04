@@ -12,7 +12,7 @@ type Props = {
 };
 
 export const TextField = forwardRef<HTMLInputElement, Props>(
-  ({ isRequired = true, label, name, type = "text", readOnly, value }, ref) => (
+  ({ isRequired, label, name, type = "text", readOnly, value }, ref) => (
     <FormControlAndLabel isRequired={isRequired} label={label}>
       <Input
         focusBorderColor="brand.500"

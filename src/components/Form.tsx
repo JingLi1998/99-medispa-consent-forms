@@ -79,7 +79,7 @@ export const Form = ({ formFieldsArray, heading, formName }: Props) => {
       {formFieldsArray.map((section: any, index: number) => (
         <FormSection
           formFields={section.sectionFields}
-          label={section.label}
+          label={section.sectionLabel}
           key={index}
           ref={register()}
         />
