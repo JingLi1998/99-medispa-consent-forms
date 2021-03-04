@@ -11,7 +11,7 @@ type Props = {
 };
 
 export const TextArea = forwardRef<HTMLTextAreaElement, Props>(
-  ({ isRequired = true, label, name, readOnly, value }, ref) => (
+  ({ isRequired, label, name, readOnly, value }, ref) => (
     <FormControlAndLabel isRequired={isRequired} label={label}>
       <Textarea
         focusBorderColor="brand.500"
