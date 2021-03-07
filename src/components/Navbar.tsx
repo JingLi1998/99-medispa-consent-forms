@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
-import { NavLink } from "./NavLink";
-import { Link } from "@chakra-ui/react";
+import { NavLink, NavLinkButton } from "./NavLink";
 import { auth } from "../firebase/firebase";
 
 const Wrapper = styled.nav`
@@ -18,8 +17,7 @@ type Props = {
 };
 
 export const Navbar = ({ isLoggedIn, onLogout }: Props) => {
-  const logout = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    event.preventDefault();
+  const logout = () => {
     auth.signOut();
     onLogout();
   };
@@ -32,9 +30,7 @@ export const Navbar = ({ isLoggedIn, onLogout }: Props) => {
           <NavLink exact={false} to="/create-form">
             Create Form
           </NavLink>
-          <Link color="brand" onClick={logout} mx={3}>
-            Logout
-          </Link>
+          <NavLinkButton onClick={logout}>Logout</NavLinkButton>
         </>
       ) : (
         <NavLink to="/login">Login</NavLink>
