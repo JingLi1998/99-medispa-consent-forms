@@ -5,6 +5,7 @@ type FormFieldShared = {
 type FormFieldInput = FormFieldShared & {
   name: string;
   type: "text" | "email" | "textarea" | "checkbox";
+  isRequired?: boolean;
 };
 
 type FormFieldList = FormFieldShared & {
